@@ -56,6 +56,7 @@ export default function Home() {
             <img
               className="mt-3 h-full w-auto"
               src={`data:image/png;base64,${Buffer.from(img.data).toString("base64")}`}
+              alt=""
             />
           ) : (
             <div className="mt-3 text-gray-600">No image</div>

@@ -26,7 +26,6 @@ async function handler(req: NextApiRequest, res: NextApiResponse) {
       await page.setContent(html, { waitUntil: "networkidle0" })
       const buffer = await page.screenshot({
         type: "png",
-        path: "sample.png",
         fullPage: true,
       })
       await browser.close()
